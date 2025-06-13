@@ -26,7 +26,7 @@ async function handleRequest(request) {
       let selectedRules = url.searchParams.get('selectedRules');
       let customRules = url.searchParams.get('customRules');
       // 获取语言参数，如果为空则使用默认值
-      let lang = url.searchParams.get('lang') || 'zh-CN';
+      let lang = url.searchParams.get('lang') || 'en-US';
       // Get custom UserAgent
       let userAgent = url.searchParams.get('ua');
       if (!userAgent) {
